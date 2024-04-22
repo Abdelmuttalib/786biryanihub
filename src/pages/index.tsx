@@ -8,11 +8,13 @@ import Image from "next/image";
 function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="w-full h-full min-h-screen flex flex-col">
-      <header className="w-full px-10 h-14 flex bg-[#111418] items-center justify-center">
+      <header className="w-full px-6 md:px-10 xl:px-20 h-14 flex bg-[#111418] items-center justify-center">
         <h5 className="text-xl font-medium">786 Biryani Hub</h5>
       </header>
-      <main className="h-full w-full flex-1 pb-80">{children}</main>
-      <footer className="w-full mt-auto px-10 py-32 flex flex-col gap-y-10 bg-[#181b21] border-t border-[#383b40]">
+      <main className="h-full w-full flex-1 pb-80 px-6 md:px-10 xl:px-20">
+        {children}
+      </main>
+      <footer className="w-full mt-auto px-6 md:px-10 xl:px-20 py-32 flex flex-col gap-y-10 bg-[#181b21] border-t border-[#383b40]">
         <div className="flex flex-col">
           <h5 className="text-3xl font-medium uppercase">786 Biryani Hub</h5>
           <h5 className="uppercase text-sm mb-7 text-gray-300">
@@ -55,13 +57,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.jpg" />
       </Head>
       <Layout>
-        <div className="w-full bg-[#111418] relative flex py-32 gap-y-10 flex-col px-10">
+        <div className="w-full bg-[#111418] relative flex py-32 gap-y-10 xl:gap-y-32 flex-col">
           <div>
             <div className="space-y-4">
               <span className="capitalize text-lg text-[#FFA100]">
                 discover a new level of taste.
               </span>
-              <h1 className="text-6xl">Middle Eastern Cuisine</h1>
+              <h1 className="text-5xl md:text-6xl">Middle Eastern Cuisine</h1>
             </div>
           </div>
           <div>
